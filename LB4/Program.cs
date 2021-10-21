@@ -13,15 +13,11 @@ namespace LB4
             int s = Convert.ToInt32(Console.ReadLine());
             int f_num = 0;
             Stack<int> stack = new Stack<int>();
-            while (s_num>=s)
+            while (s_num>0)
             {
                 int x = s_num % s;
                 stack.Push(x);
                 s_num /= s;
-            }
-            if (s_num > 0)
-            {
-                stack.Push(s_num);
             }
             int l = stack.Count;
             for (int i = l-1; i >= 0 && stack.Count>0; i++)
