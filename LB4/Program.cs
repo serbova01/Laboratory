@@ -28,7 +28,7 @@ namespace LB4
             {
                 f_num += (int)(stack.Pop() * Math.Pow(10, i));
             }
-            Console.WriteLine($"Результат: {f_num}");
+            Console.WriteLine($"Результат:{f_num}");
             Console.ReadKey();
         }
     }
